@@ -22,7 +22,8 @@ var MCTileLayer = L.TileLayer.extend({
 				url += "/" + (x + 2 * y + 1);
 			}
 		}
-		url = url + "." + this._imageFormat;
+		url = "https://cdn.jsdelivr.net/gh/CberYellowstone/Cashew-Vanilla-Server-Map/Map/" + url + "." + this._imageFormat;
+		console.info(url);
 		return url;
 	},
 });
